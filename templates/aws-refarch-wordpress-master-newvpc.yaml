@@ -244,6 +244,7 @@ Parameters:
     AllowedValues:
       - db.t3.small
       - db.t2.micro
+      - db.t3.micro
       - db.m5d.large
       - db.t3.medium
       - db.r5.large
@@ -255,7 +256,7 @@ Parameters:
       - db.r5.16xlarge
       - db.r5.24xlarge
     ConstraintDescription: Must be a valid RDS instance class.
-    Default: db.t2.micro
+    Default: db.t3.micro
     Description: The Amazon RDS database instance class.
     Type: String
   DatabaseMasterUsername:
@@ -459,7 +460,7 @@ Parameters:
       - cache.r5.24xlarge
       - cache.r6g.large
     ConstraintDescription: Must be a valid Amazon ElastiCache node type.
-    Default: cache.t2.micro
+    Default: cache.t3.micro
     Description: The Amazon ElastiCache cluster node type.
     Type: String
   EC2KeyName:
